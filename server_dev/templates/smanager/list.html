@@ -1,0 +1,31 @@
+{% extends 'jariyo/base.html' %}
+{% block content %}
+{% load static %}
+
+<li>
+    {% for page_number in shop_list.paginator.page_range %}
+        {% if page_number == shop_list.number %}
+        <ul>
+            <a href="?page={{ page_number }}">{{ page_number }}</a>
+        </ul>
+        {% else %}
+        <ul>
+            <a href="?page={{ page_number }}">{{ page_number }}</a>
+        </ul>
+        {% endif %}
+    {% endfor %}
+</li>
+
+
+{% if shop_list %}
+    {% for shop in shop_list %}
+        <h1>{{ shop.name }}<br></h1>
+        4인 이상 : {{ shop.sit_over4_max }} / {{ shop.sit_over4 }}<br>
+        4인석 : {{ shop.sit_4_max }} / {{ shop.sit_4 }}<br>
+        2인석 : {{ shop.sit_2_max }} / {{ shop.sit_2 }}<br>
+    {% endfor %}
+{% else %}매장이 없습니다.{% endif %}
+
+
+
+{% endblock %}
