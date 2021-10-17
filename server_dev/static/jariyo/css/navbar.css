@@ -39,19 +39,14 @@
     margin-left: 50px;
 }
 
-.menu {
-    margin-top: 10px;
-    margin-left: 10px;
-    position: fixed;
-    z-index: 1;
-    width: auto;
-    height: auto;
-    font-size: 30px;
+.container-fluid {
+    margin-bottom: 0;
+    background-color: rgb(40, 40, 40);
 }
 
-.container-fluid {
-    margin-bottom: 30px;
-    background-color: rgb(40, 40, 40);
+nav.navbar {
+    margin: 0;
+    border: 0;
 }
 
 #div_profile_img {

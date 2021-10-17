@@ -24,7 +24,7 @@ body {
 }
 
 img.logo {
-    margin-top: 50px;
+    margin-top: 0;
     width: 100%;
     max-width: 683px;
 }

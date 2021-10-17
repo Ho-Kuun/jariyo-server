@@ -12,10 +12,15 @@
     <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap-theme.min.css' %}">
 
     <!-- base CSS -->
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'jariyo/css/navbar.css' %}">
     <title>자리요</title>
 
 </head>
 <body>
+    <nav>
+        {% include "jariyo/navbar.html" %}
+    </nav>
     <!-- Content -->
     {% block content %}
     {% endblock %}
@@ -25,6 +30,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'bootstrap/js/npm.js' %}"></script>
+    <script src="{% static 'jariyo/js/navbar.js' %}"></script>
     <!-- Script -->
 </body>
 </html>

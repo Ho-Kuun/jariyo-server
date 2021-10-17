@@ -14,7 +14,6 @@ class UserForm(forms.ModelForm):
         model = User
         fields = ['first_name','last_name']
 
-
 class ProfileForm(forms.ModelForm):
     profile_photo = forms.ImageField(required=False)
     class Meta:
